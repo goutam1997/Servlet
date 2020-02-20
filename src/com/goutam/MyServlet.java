@@ -10,14 +10,14 @@ import javax.servlet.http.HttpSession;
 
 public class MyServlet extends HttpServlet {
 	
-	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-		String command = req.getParameter("command");
+		String command = request.getParameter("command");
 
-		HttpSession session = req.getSession();
+		HttpSession session = request.getSession();
 		session.setAttribute("command", command);
 
-		res.sendRedirect("show");
+		response.sendRedirect("show");
 
 	}
 }
