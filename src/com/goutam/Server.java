@@ -9,8 +9,8 @@ public class Server {
 		map.clear();
 	}
 
-	public static void put(String key, String value) {
-		map.put(key, value);
+	public static void put(String key2, String value1) {
+		map.put(key2, value1);
 	}
 
 	public static String get(String key) {
